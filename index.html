@@ -20,6 +20,20 @@
             font-weight: normal;
             font-size: 0.8em;
         }
+
+        h1 {
+            position: fixed;
+        }
+
+        #contents {
+            position: relative;
+            top: 80px;
+        }
+
+        #main-content {
+            position: relative;
+            top: 80px
+        }
     </style>
 </head>
 
@@ -27,23 +41,40 @@
 
     <h1>GeegC's test page</h1>
 
-    <h2>Contents</h2>
-    <ul>
-        <li><a href="#purpose">Purpose</a></li>
-        <li><a href="#further-info">Further info</a>
-        </li>
-    </ul>
+    <div id="contents">
+        <h2>Contents</h2>
+        <ul>
+            <li><a href="#purpose">Purpose</a></li>
+            <li><a href="#further-info">Further info</a>
+            </li>
+        </ul>
+    </div>
 
-    <h2 id="purpose">Purpose</h2>
-    <h6>Why does this page exist</h6>
+    <div id="main-content">
+        <h2 id="purpose">Purpose</h2>
+        <h6>Why does this page exist</h6>
 
-    <p class="post">Page to test out the basic features of github pages.</p>
+        <p class="post">Page to test out the basic features of github pages.</p>
+        <p class="post">Some extra text to pad things out a bit and test scrolling/links/etc:<br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.<br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </p>
 
-    <h2 id="further-info">Further info</h2>
-    <h6>General</h6>
+        <h2 id="further-info">Further info</h2>
+        <h6>General</h6>
 
-    <p class="post">Testing a second field/link.</p>
-
+        <p class="post">Testing a second field/link.</p>
+    </div>
 
 
 
