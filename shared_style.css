@@ -3,8 +3,7 @@ body {
 }
 
 #header {
-    background-color: rgb(0, 92, 129);
-    /* */
+    background-color: rgba(0, 92, 129, 0.767);
 }
 
 #footer {
@@ -12,7 +11,7 @@ body {
 }
 
 #sidebar {
-    background-color: rgb(31, 142, 148);
+    background-color: rgba(31, 142, 148, 0.785);
 }
 
 #sidebar a:hover,
