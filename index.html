@@ -12,8 +12,10 @@
         body {
             height: 100%;
             width: 100%;
-            margin: 0;
             /* reset default user-agent margin that causes overflow */
+            margin: 0;
+            /* add some padding to avoid content overlapping footer */
+            padding-bottom: 50px;
         }
 
         /* Make box sizing border-box for all elements for easier sizing 
@@ -94,10 +96,11 @@
 
         #main-content {
             overflow-y: auto;
-            height: 83vh;
+            height: 75vh;
             width: 72vw;
             margin-left: 1vw;
             margin-top: 1vh;
+            margin-bottom: 550px;
         }
 
         .pic {
@@ -182,6 +185,8 @@
             </div>
             -->
     </div>
+
+
 
 
 </body>
