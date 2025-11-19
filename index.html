@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Project: Event invite</title>
+    <style>
+        /* Set the size of the whole thing as 100% 
+        (this is necessary) so that later percentages resolve
+        relative to the whole rather than relative to the parent object */
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            /* reset default user-agent margin that causes overflow */
+        }
+
+        /* Make box sizing border-box for all elements for easier sizing 
+        (this avoids the total width/height ending up more than 100% 
+        and therefore getting whole-page scroll bars)*/
+        * {
+            box-sizing: border-box;
+        }
+
+        /* The usual messing around with specific objects */
+        body {
+            font-family: "Helvetica", sans-serif;
+        }
+
+        #header {
+            background: rgb(235, 249, 250);
+            padding: 5px;
+            margin-top: 1vh;
+            margin-left: 1vw;
+            margin-right: 1vw;
+        }
+
+        .header-text {
+            margin: 0;
+            text-align: center;
+            font-family: cursive;
+        }
+
+        #sidebar {
+            width: 23vw;
+            position: absolute;
+            right: 1.5vw;
+            top: 25vh;
+            background: rgb(175, 220, 242);
+            padding: 1.5%;
+        }
+
+        h3 {
+            margin-top: 7px;
+        }
+
+        h4 {
+            margin-bottom: 0px;
+            margin-top: 1.2vh;
+        }
+
+        h5 {
+            margin-top: 3px;
+            margin-bottom: 5px;
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        .subheading {
+            margin-left: 1.5vw;
+        }
+
+        #footer {
+            position: fixed;
+            bottom: 1vh;
+            /* Use left and right offsets rather than margins to avoid overflow */
+            width: auto;
+            left: 1vw;
+            right: 1vw;
+            background: rgb(235, 235, 235);
+            padding-left: 1vw;
+        }
+
+        #footer-text {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #RSVP {
+            background: rgb(167, 142, 250);
+            padding: 3px;
+        }
+
+        #main-content {
+            overflow-y: auto;
+            height: 83vh;
+            width: 72vw;
+            margin-left: 1vw;
+            margin-top: 1vh;
+        }
+
+        .pic {
+            /* Use percent of viewport width because otherwise 
+            these pics seem to go tiny in some situations */
+            width: 20vw;
+            float: right;
+            margin-left: 7px;
+            margin-right: 3px;
+            margin-top: 5px;
+        }
+
+        .questions {
+            margin-top: 5px;
+            padding-left: 1.8em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1 class="header-text">Audiobook corner</h1>
+        <h2 class="header-text">A fully online audiobook-friendly book club!</h2>
+    </div>
+
+    <div id="sidebar">
+        <h3>Books this month:</h3>
+        <p><a href="#AOGG">Anne of Green Gables</a></p>
+        <p><a href="#HTFYW">I Hope This Finds You Well</a></p>
+    </div>
+
+    <div id="main-content">
+        <div>
+            <h4 id="AOGG" class="subheading">Anne of Green Gables</h4>
+            <h5 class="subheading">L. M. Montgomery</h5>
+
+            <img id="AOGG-pic" class="pic"
+                src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Montgomery_Anne_of_Green_Gables.jpg"
+                alt="Sage green book cover with an old-looking framed portrait of a woman with red hair. Anne of Green Gables by L. M. Montgomery">
+
+            <ul class="questions">
+                <li>Where are the sources of sexism in the book? To what extent, and how, are these challenged or
+                    overcome?</li>
+                <li>How is gender represented in the book? Is femininity performed?</li>
+                <li>Is Anne's imagination an asset to her?</li>
+                <li>How could the story of Anne be modernised? Would the plot work if it was set in the present?</li>
+                <li>Does Anne’s character fit with the ‘Manic Pixie Dream Girl’ trope?</li>
+                <li>What is the significance of names and renaming things in the book?</li>
+            </ul>
+
+
+        </div>
+
+        <div>
+            <h4 id="HTFYW" class="subheading">I Hope This Finds You Well</h4>
+            <h5 class="subheading">Natalie Sue</h5>
+
+            <img id="HTFYW-pic" class="pic" src="https://upload.wikimedia.org/wikipedia/commons/9/92/Team_space.png"
+                alt="Iconograph of four people working facing each other in an office cubicle.">
+
+            <ul class="questions">
+                <li>What parallels/contrasts can be drawn between this book and Interesting Facts About Space?</li>
+                <li>How is the interplay between humour, anxiety, and sadness handled?</li>
+                <li>How does the author handle the themes of what we show others vs what we keep hidden?</li>
+                <li>To what extent would this have been a different book if the protagonist’s heritage had been Canadian
+                    instead of Persian?</li>
+                <li>Do you find the main character relatable? Or are you drawn to any other characters in particular?
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <p id="footer-text">Thursday 4th December, on WhatsApp video call. Don't forget to <span id="RSVP"><a
+                    href="TODO">RSVP</a></span></p>
+        <!--
+            <div id="RSVP">
+                <p><a href="TODO">RSVP</a></p>
+            </div>
+            -->
+    </div>
+
+
+</body>
+
+</html>
