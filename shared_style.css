@@ -19,3 +19,7 @@ body {
 #sidebar a:focus {
     background-color: rgb(68, 186, 186);
 }
+
+#suggest {
+    background-color: rgba(31, 142, 148, 0.785);
+}
