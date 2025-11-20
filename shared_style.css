@@ -1,9 +1,14 @@
 body {
     background-color: rgb(252, 246, 220);
+    font-family: "Stack Sans Text", sans-serif;
 }
 
 #header {
     background-color: rgba(0, 92, 129, 0.767);
+}
+
+.header-text {
+    font-family: "Stack Sans Notch", cursive;
 }
 
 #footer {
