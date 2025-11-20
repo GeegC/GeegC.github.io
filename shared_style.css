@@ -5,10 +5,16 @@ body {
 
 #header {
     background-color: rgba(0, 92, 129, 0.767);
+    padding: 5px;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 .header-text {
     font-family: "Stack Sans Notch", cursive;
+    margin: 0;
+    text-align: center;
 }
 
 #footer {
